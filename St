@@ -234,7 +234,14 @@ local function Mer()
 
     game:GetService("ReplicatedStorage").TGSButtonCallbacks_ServerInvoke:FireServer(unpack(args))
 end
+local function 	autoFarm()
+	local args = {
+    	[1] = "ecb6a6ed-62ae-490b-85cd-685fd66f0d2f-0",
+	    [2] = 27
+	}
 
+	game:GetService("ReplicatedStorage").NomnomHandler_CollectNomnom:FireServer(unpack(args))
+end
 -- Add buttons or toggles with actions
 
 createToggle(scrollingFrame, "Upgrade sell", autoUp)
