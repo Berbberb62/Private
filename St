@@ -226,14 +226,6 @@ local function autoDep()
     }
     game:GetService("ReplicatedStorage").TGSButtonCallbacks_ServerInvoke:FireServer(unpack(args))
 end
-local function autoFarm()
-    local args = {
-        [1] = "4bc4bbf5-f1a1-466c-84ab-0f62b6fbe1c1-51",
-        [2] = 19
-    }
-
-    game:GetService("ReplicatedStorage").NomnomHandler_CollectNomnom:FireServer(unpack(args))
-end
 local function Mer()
     local args = {
         [1] = "MergePancakes",
@@ -249,6 +241,6 @@ createToggle(scrollingFrame, "Upgrade sell", autoUp)
 
 createToggle(scrollingFrame, "Auto Deposit(Mid)", autoDep)
 
-createToggle(scrollingFrame, "Auto Farm", autoFarm, .000001)
+createToggle(scrollingFrame, "Auto Farm", autoFarm, .0001)
 
-createToggle(scrollingFrame, "Auto Farm", autoMer)
+createToggle(scrollingFrame, "Auto Merge", autoMer)
