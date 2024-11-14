@@ -226,21 +226,21 @@ local function autoDep()
     }
     game:GetService("ReplicatedStorage").TGSButtonCallbacks_ServerInvoke:FireServer(unpack(args))
 end
-local function Mer()
+local function autoFarm()
+    local args = {
+        [1] = "ecb6a6ed-62ae-490b-85cd-685fd66f0d2f-0",
+        [2] = 27
+    }
+
+    game:GetService("ReplicatedStorage").NomnomHandler_CollectNomnom:FireServer(unpack(args))
+end
+local function autoMer()
     local args = {
         [1] = "MergePancakes",
         [2] = workspace.Plots.Plot2.IslandBase.MergeButton.Collider.ClientComponent_OnPlayerEnter.TargetObject
     }
 
     game:GetService("ReplicatedStorage").TGSButtonCallbacks_ServerInvoke:FireServer(unpack(args))
-end
-local function 	autoFarm()
-	local args = {
-    	[1] = "ecb6a6ed-62ae-490b-85cd-685fd66f0d2f-0",
-	    [2] = 27
-	}
-
-	game:GetService("ReplicatedStorage").NomnomHandler_CollectNomnom:FireServer(unpack(args))
 end
 -- Add buttons or toggles with actions
 
